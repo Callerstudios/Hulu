@@ -299,6 +299,26 @@ input[type="checkbox"]:checked + .real_circle {
   padding-left: 10px;
   font-size: 14px;
 }
+.child:nth-child(8) {
+  /* background-color: #0b0c0f; */
+  background-color: #254abb;
+  padding: 80px 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+  gap: 10px;
+}
+.footer_d{
+  background-color: red;
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+}
+.f_top{
+  background-color: #00ed82;
+}
+.f_bottom a{
+  display: block;
+}
 
 @media screen and (max-width: 1279px) {
   .container_2 {
