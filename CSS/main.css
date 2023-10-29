@@ -1,7 +1,7 @@
 * {
-  padding: 0;
   box-sizing: border-box;
   margin: 0;
+  border: 0;
 }
 body {
   font-family: graphik;
@@ -25,9 +25,11 @@ a {
 .container {
   display: grid;
   grid-template-rows: 76px 670px 1350px 820px 230px 230px 850px 450px 250px;
+  /* grid-template-columns: 1fr; */
 }
 .child {
   background-color: aqua;
+  width: 100%;
 }
 .child:nth-child(1) {
   color: black;
@@ -52,7 +54,6 @@ a {
   background-size: cover;
 }
 .subs {
-  /* background-color: #00ed82; */
   justify-content: center;
   align-items: center;
   display: flex;
@@ -98,8 +99,7 @@ a {
 .container_2 {
   height: 70vh;
   display: grid;
-  grid-template-columns: 300px 300px 300px 300px;
-  /* grid-template-rows: 1fr; */
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
 }
 .holder {
@@ -119,9 +119,6 @@ a {
   background-color: #00ed82;
 }
 .holder:hover {
-  /* box-shadow: 5px 5px 0px rgba(170, 166, 166, 0.3),
-    5px -5px 0px rgba(170, 166, 166, 0.3), -5px 5px 0px rgba(170, 166, 166, 0.3),
-    -5px -5px 0px rgba(170, 166, 166, 0.3); */
   border: 5px solid gray;
 }
 .movies_card_1 {
@@ -141,7 +138,6 @@ a {
   background-size: cover;
 }
 .get_hulu_button {
-  /* width: 150px; */
   padding: 15px 25px;
   border-radius: 5px;
   display: inline-block;
@@ -164,7 +160,6 @@ a {
   margin-top: 10px;
   width: 80px;
   height: 5px;
-  /* margin-left: 20px; */
   background-color: white;
 }
 .circle {
@@ -209,38 +204,31 @@ a {
   display: flex;
 }
 .plans {
-  /* margin-left: 50px; */
   width: 110px;
   height: 100px;
-  /* background-color: #e6f0eb; */
   text-align: center;
 }
 .plans2 {
   width: 150px;
   height: 100px;
-  /* background-color: #ced3d1; */
   margin-left: 10px;
 }
 .radio {
   display: flex;
-  /* margin-top: -5px; */
   width: 60px;
   height: 30px;
   border-radius: 20px;
   background-color: #424957;
-  /* text-align: right; */
-  /* justify-content: space-between; */
 }
-input {
+.radio input {
   display: none;
 }
-input[type="checkbox"]:checked + .real_circle {
+.radio input[type="checkbox"]:checked + .real_circle {
   background-color: #00ed82;
   display: block;
   text-align: right;
-  /* padding-left: 50px; */
 }
-.real_circle{
+.real_circle {
   background-color: #424957;
   width: 100%;
   height: 100%;
@@ -257,7 +245,6 @@ input[type="checkbox"]:checked + .real_circle {
 .trial_box1 {
   width: 300px;
   text-align: center;
-  /* background-color: #00ed82; */
   margin-left: 50px;
 }
 .white_button {
@@ -277,7 +264,6 @@ input[type="checkbox"]:checked + .real_circle {
   font-weight: bold;
 }
 .child:nth-child(7) {
-  /* background-color: #0b0c0f; */
   background-color: #0b0c0f;
   padding: 20px 150px;
 }
@@ -286,7 +272,6 @@ input[type="checkbox"]:checked + .real_circle {
   background-color: #918f8f;
   grid-template-rows: 70px 70px 70px 70px 70px 70px 70px 70px 70px 70px;
   gap: 1px;
-  /* background-color: #00ed82; */
 }
 .grid3 {
   display: grid;
@@ -295,7 +280,7 @@ input[type="checkbox"]:checked + .real_circle {
   gap: 5px;
   background-color: #0b0c0f;
 }
-.grid3 .grid3_content:first-child{
+.grid3 .grid3_content:first-child {
   text-align: left;
 }
 .grid3_content {
@@ -303,14 +288,13 @@ input[type="checkbox"]:checked + .real_circle {
   padding-left: 10px;
   font-size: 14px;
 }
-.dash{
+.dash {
   width: 15px;
   height: 2px;
   display: inline-block;
   background-color: rgb(231, 222, 222);
 }
 .child:nth-child(8) {
-  /* background-color: #0b0c0f; */
   background-color: #e8eaed;
   padding: 80px 150px;
   display: grid;
@@ -319,16 +303,15 @@ input[type="checkbox"]:checked + .real_circle {
   gap: 10px;
   color: #424957;
 }
-.footer_d{
+.footer_d {
   display: grid;
   grid-template-rows: 1fr 9fr;
 }
-.f_top{
-  /* background-color: #00ed82; */
+.f_top {
   font-size: 14px;
   font-family: graphik_semi_bold;
 }
-.f_bottom a{
+.f_bottom a {
   color: #424957;
   display: block;
   text-decoration: none;
@@ -340,30 +323,118 @@ input[type="checkbox"]:checked + .real_circle {
   padding: 10px 150px;
   color: #424957;
 }
-.small_img_part{
+.small_img_part {
   margin-top: 50px;
   width: fit-content;
   height: 50px;
-  /* background-color: #00ed82; */
 }
-.small_img_part img{
+.small_img_part img {
   display: inline-block;
   padding: 10px;
 }
-.down{
+.down {
   margin-top: 50px;
-  /* display: flex; */
-  /* gap: 20px; */
   font-size: 12px;
 }
-.down p{
+.down p {
   display: inline-block;
   padding: 5px 15px;
   width: fit-content;
 }
-.down a{
+.down a {
   text-decoration: none;
   color: #424957;
+}
+
+.modal {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 600px;
+  height: 650px;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 25px;
+  color: #3f3e3e;
+  line-height: 25px;
+}
+.modal a{
+  color: blue;
+  text-decoration: none;
+}
+.modal > button{
+  margin-left: 90%;
+  background-color: transparent;
+  width: 35px;
+  height: 35px;
+}
+.modal button{
+  cursor: pointer;
+}
+.modal form button{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #918f8f;
+  color: white;
+  margin: 20px 0 100px 0;
+}
+.modal-content {
+  padding: 20px;
+  position: relative;
+  max-height: 500px;
+}
+form{
+  font-family: graphik_semi_bold;
+}
+.modal h1{
+  padding: 5px;
+  font-family: graphik_semi_bold;
+  font-size: 24px;
+}
+.each_input{
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+}
+.each_input input{
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.login_button{
+  padding: 10px;
+  width: fit-content;
+  border-radius: 5px;
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  cursor: pointer;
+}
+.to_login > input{
+  display: none;
+}
+.to_login input[type="checkbox"]:checked + .modal {
+  display: none;
+}
+.modal{
+  /* display: none; */
+}
+.login_button label{
+  width: 100%;
+  background-color: transparent;
+  font-family: graphik_semi_bold  ;
+  font-size: 15px;
+  color: rgb(168, 168, 168);
+}
+.login_button{
+  background-color: transparent;
+  width: fit-content;
+}
+
+.login_button:hover{
+  background-color: #424957;
+  color: #ffffff;
 }
 @media screen and (max-width: 1279px) {
   .container_2 {
