@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+@font-face {
+  font-family: graphik;
+  src: url(../GraphicFont/GraphikRegular.otf);
+}
+@font-face {
+  font-family: graphik_bold;
+  src: url(../GraphicFont/GraphikBold.otf);
+}
+@font-face {
+  font-family: graphik_semi_bold;
+  src: url(../GraphicFont/GraphikSemibold.otf);
+}
+body {
+  background-color: #f7f7f9;
+}
+.top_nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  padding: 15px 20px;
+}
+.modal {
+  width: 400px;
+  height: 700px;
+  margin: auto;
+  background-color: #ffffff;
+  margin-top: 100px;
+  color: #3f3e3e;
+  line-height: 25px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+}
+.modal a {
+  color: blue;
+  text-decoration: none;
+}
+.modal > button {
+  margin-left: 90%;
+  background-color: transparent;
+  width: 35px;
+  height: 35px;
+}
+.modal button {
+  cursor: pointer;
+}
+.modal form button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #918f8f;
+  color: white;
+  margin: 20px 0 100px 0;
+}
+.modal-content {
+  padding: 20px;
+  position: relative;
+  max-height: 500px;
+}
+form {
+  font-family: graphik_semi_bold;
+}
+.modal h1 {
+  padding: 5px;
+  font-family: graphik_semi_bold;
+  font-size: 24px;
+}
+.each_input {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+}
+.each_input input {
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.login_button {
+  padding: 10px;
+  width: fit-content;
+  border-radius: 5px;
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  cursor: pointer;
+}
+.login_button label {
+  width: 100%;
+  background-color: transparent;
+  font-family: graphik_semi_bold;
+  font-size: 15px;
+  color: rgb(168, 168, 168);
+}
+.login_button {
+  background-color: transparent;
+  width: fit-content;
+}
+.login_button:hover {
+  background-color: #424957;
+  color: #ffffff;
+}
+.down {
+  margin-left: 30%;
+  padding: 0 70px;
+  margin-top: 50px;
+  font-size: 12px;
+}
+.down p {
+  display: inline-block;
+  padding: 5px 15px;
+  width: fit-content;
+}
+.down a {
+  text-decoration: none;
+  color: #424957;
+}
