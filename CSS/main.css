@@ -415,10 +415,10 @@ form{
   display: none;
 }
 .to_login input[type="checkbox"]:checked + .modal {
-  display: none;
+  display: block;
 }
 .modal{
-  /* display: none; */
+  display: none;
 }
 .login_button label{
   width: 100%;
